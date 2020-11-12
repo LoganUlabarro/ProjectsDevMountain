@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "379453df-f291-4593-b3e6-818a3afa2b67",
+		"name": "EmployeeManagerV2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "The GET for Employee Manager V2"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 230,\r\n        \"name\": \"Dimitri Blaiddyd\",\r\n        \"phone\": \"2815555555\",\r\n        \"email\": \"BoarPrince@hotmail.com\",\r\n        \"title\": \"King of Faerghus\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "Posting a duder"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/617?name=Claude Von Riegan&phone=8320000000&email=khalid@gmail.com&title=Wyvern Rider",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"617"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Claude Von Riegan"
+						},
+						{
+							"key": "phone",
+							"value": "8320000000"
+						},
+						{
+							"key": "email",
+							"value": "khalid@gmail.com"
+						},
+						{
+							"key": "title",
+							"value": "Wyvern Rider"
+						}
+					]
+				},
+				"description": "This will edit some poor sole's info"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/7868",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"7868"
+					]
+				},
+				"description": "Delete Employee"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
